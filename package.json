@@ -1,51 +1,31 @@
 {
-  "_from": "scissors@^0.2.5",
-  "_id": "scissors@0.2.5",
-  "_inBundle": false,
-  "_integrity": "sha512-s91wlRGjjdoJ0uM5lvee4SVA1rSSBMEQ5I0t2l7GBONb9RsbxzLf6/xl0OvmQJArdCu3KAFBhK0S1jMegomHew==",
-  "_location": "/scissors",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "scissors@^0.2.5",
-    "name": "scissors",
-    "escapedName": "scissors",
-    "rawSpec": "^0.2.5",
-    "saveSpec": null,
-    "fetchSpec": "^0.2.5"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/scissors/-/scissors-0.2.5.tgz",
-  "_shasum": "342db1da0b4d607e1a3f6a3f1b723df9f892fef1",
-  "_spec": "scissors@^0.2.5",
-  "_where": "/var/www/html/aston",
-  "author": {
-    "name": "Tim Cameron Ryan",
-    "url": "@tcr"
-  },
-  "bugs": {
-    "url": "https://github.com/tcr/scissors/issues"
-  },
-  "bundleDependencies": false,
+  "name": "scissors",
+  "version": "0.2.3",
+  "description": "PDF manipulation in Node.js, based on PDFTK.",
+  "main": "scissors.js",
   "dependencies": {
     "any-promise": "^1.3.0",
     "async": "^2.4.0",
     "bufferjs": "^3.0.1",
     "bufferstream": "https://github.com/fxbytesin/node-bufferstream.git",
-    "rimraf": "^2.6.2",
-    "temp": "^0.8.1"
+    "temp": "^0.8.1",
+    "rimraf": "^2.6.2"
   },
-  "deprecated": false,
-  "description": "PDF manipulation in Node.js, based on PDFTK.",
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "assert-diff": "^1.2.0",
     "mocha": "^3.5.3",
     "stream-to-promise": "^2.2.0"
   },
-  "homepage": "https://github.com/tcr/scissors#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcr/scissors.git"
+  },
+  "author": "Tim Cameron Ryan (@tcr) and others",
+  "license": "MIT",
+  "readmeFilename": "README.md",
   "keywords": [
     "pdf",
     "manipulation",
@@ -56,16 +36,5 @@
     "join",
     "crop",
     "PDFTK"
-  ],
-  "license": "MIT",
-  "main": "scissors.js",
-  "name": "scissors",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tcr/scissors.git"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "version": "0.2.5"
+  ]
 }
